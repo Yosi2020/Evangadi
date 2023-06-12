@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* header */
+.myheader {
+  background-color: rgb(50, 73, 93);
+}
+
+.he {
+  position: fixed;
+  width: 100%;
+}
+
+/* div of my header */
+#myhead {
+  padding-top: 27px;
+  padding-bottom: 24px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #ffff;
+  font-weight: 700;
+}
+
+/* Banner img */
+#banner img {
+  padding-top: 60px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* the all container of 3 images */
+.mypuppy1 {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.hey {
+  display: flex;
+  margin-right: 0;
+}
+
+/* puppy images */
+#puppy1 img #puppy3 img {
+  width: 313.6px;
+  height: 100%;
+}
+
+/* missing puppy */
+#missing {
+  width: 313.6px;
+  height: 98.6%;
+  background-color: #f04d65;
+  text-align: center;
+  padding: 88px 20px;
+  margin-left: 15px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* title of more puppy */
+#More_puppies {
+  margin: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* here is thetwo puppy layers */
+.Puppies {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+/* footer */
+.foot {
+  padding-top: 100px;
+  padding-bottom: 127px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #ffff;
+}
+
+/* Remove the "missing" class on mobile */
+@media (max-width: 720px) {
+  .hey #missing {
+    display: none;
+  }
+
+  .mypuppy1 {
+    width: 310px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* marew comment */
+  #puppy1 {
+    margin-bottom: 10px;
+  }
+  .Puppies {
+    width: 310px;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .Puppies img {
+    width: 310px;
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+@media ((min-width: 721px) and (max-width: 962px)) {
+  .hey {
+    display: felx;
+    width: 630px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .mypuppy1 {
+    width: 630px;
+    display: block;
+  }
+  #puppy1 {
+    margin-top: 5px;
+  }
+
+  #missing {
+    width: 313.6px;
+    background-color: #f04d65;
+    text-align: center;
+    padding: 88px 20px;
+    margin-left: 15px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  #puppy2 {
+    margin-top: 10px;
+    margin-left: 25%;
+  }
+
+  .Puppies {
+    width: 630px;
+    display: flex;
+    /* margin: 20px auto; */
+  }
+
+  .Puppies img {
+    width: 310px;
+    display: flex;
+    /* margin: 20px auto; */
+  }
+}
