@@ -1,0 +1,60 @@
+.all {
+  background-color: rgb(213, 211, 214);
+  margin: 50px auto;
+  width: 960px;
+}
+
+.pop {
+  display: flex;
+  justify-content: space-between;
+  border: 10px solid white;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.first {
+  background-color: rgb(9, 146, 17);
+  width: 230px;
+  height: 200px;
+  border: 10px solid white;
+}
+.first_one {
+  background-color: yellow;
+  width: 180px;
+  height: 150px;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  margin-top: 22px;
+  border: 5px solid rgb(226, 173, 19);
+}
+
+.second {
+  background-color: rgb(226, 173, 19);
+  width: 230px;
+  height: 200px;
+  border: 10px solid white;
+}
+
+.thrid {
+  background-color: rgb(171, 9, 24);
+  width: 230px;
+  height: 200px;
+  border: 10px solid white;
+}
+
+.second p {
+  background-color: rgb(226, 173, 19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+
+.thrid p {
+  background-color: rgb(171, 9, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
