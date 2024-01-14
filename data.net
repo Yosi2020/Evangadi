@@ -1,0 +1,28 @@
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+
+[Route("api/[controller]")]
+[ApiController]
+public class CustomerController : ControllerBase
+{
+    private static List<Customer> customers = new List<Customer>();
+    private static int nextId = 1;
+
+    [HttpGet]
+    public IEnumerable<Customer> Get()
+    {
+        return customers;
+    }
+
+    [HttpPost]
+    public IActionResult Post([FromBody] Customer customer)
+    {
+        if (customer == null)
+        {
+            return BadRequest();
+        }
+        customer.Id = nextId++;
+        customers.Add(customer);
+        return Ok(customer);
+    }
+}

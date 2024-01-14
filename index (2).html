@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        #customerList {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Customer Management</h1>
+    <form id="customerForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br><br>
+        <button type="submit">Add Customer</button>
+    </form>
+    <div id="customerList"></div>
+
+    <script>
+        document.getElementById("customerForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+
+            // Call your API here. For simplicity, we're just updating the page directly.
+            var customerList = document.getElementById("customerList");
+            customerList.innerHTML += "<div>" + username + " (" + email + ")</div>";
+        });
+    </script>
+</body>
+</html>
