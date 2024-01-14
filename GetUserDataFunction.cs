@@ -43,3 +43,15 @@ public class User
     public string Username { get; set; }
     public string Email { get; set; }
 }
+
+
+
+
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "<your_storage_account_connection_string>",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "SqlConnectionString": "<your_sql_database_connection_string>"
+  }
+}
